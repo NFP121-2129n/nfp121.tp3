@@ -29,6 +29,53 @@ public class PilesAuMemeComportement extends junit.framework.TestCase {
     {
         //Libérez ici les ressources engagées par setUp()
     }
+    
+    public void test_des_test_final() throws Exception {
+        PileTest pt1 = new PileTest();
+        Pile2Test pt2 = new Pile2Test();
+        Pile3Test pt3 = new Pile3Test();
+        Pile4Test pt4 = new Pile4Test();
+        
+        //pite test 1
+        pt1.setUp();
+        pt1.test_Pile_equals();
+        pt1.test_Pile_TailleNegative();
+        pt1.test_Pile_toString();
+        pt1.test_Pile_estVide();
+        pt1.test_Pile_sommet();
+        pt1.test_Pile_estPleine();
+        pt1.test_Pile_capacite();
+        
+        //pite test 2
+        pt2.setUp();
+        pt2.test_Pile_equals();
+        pt2.test_Pile_TailleNegative();
+        pt2.test_Pile_toString();
+        pt2.test_Pile_estVide();
+        pt2.test_Pile_sommet();
+        pt2.test_Pile_estPleine();
+        pt2.test_Pile_capacite();
+        
+        //pite test 3
+        pt3.setUp();
+        pt3.test_Pile_equals();
+        pt3.test_Pile_TailleNegative();
+        pt3.test_Pile_toString();
+        pt3.test_Pile_estVide();
+        pt3.test_Pile_sommet();
+        pt3.test_Pile_estPleine();
+        pt3.test_Pile_capacite();
+        
+        //pite test 4
+        pt4.setUp();
+        pt4.test_Pile_equals();
+        pt4.test_Pile_TailleNegative();
+        pt4.test_Pile_toString();
+        pt4.test_Pile_estVide();
+        pt4.test_Pile_sommet();
+        pt4.test_Pile_estPleine();
+        pt4.test_Pile_capacite();
+    }
 
     public void test_Sommaire()  throws Exception {
 
@@ -170,7 +217,7 @@ public class PilesAuMemeComportement extends junit.framework.TestCase {
         assertEquals(" différence sur la taille() ?? ",p1.taille(), p2.taille());
         assertEquals(" différence sur la taille() ?? ",p2.taille(), p3.taille());
         assertEquals(" différence  sur la taille() ?? ",p3.taille(), p4.taille());
-
+        assertEquals(" différence  sur la taille() ?? ",p3.taille(), p4.taille());
     }
 }
 
